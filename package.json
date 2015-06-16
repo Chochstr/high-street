@@ -1,0 +1,12 @@
+{
+  "name": "high-street",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "repository": "https://github.com/Chochstr/high-street-ui",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.39.0"
+  },
+  "readme": "High Street syntax theme. A monokai syntax theme for the seti-ui for Atom.",
+  "readmeFilename": "README.md"
+}

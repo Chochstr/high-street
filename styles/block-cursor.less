@@ -1,0 +1,26 @@
+atom-text-editor::shadow .cursors .cursor {
+  opacity: 1;
+  color: #000;
+  background-color: #000;
+  border: none;
+  transition-property: background-color, border-color, opacity;
+}
+
+atom-text-editor[mini]:not(.is-focused)::shadow .cursors .cursor {
+  display: none;
+}
+
+@-webkit-keyframes blinkCursor {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.cursor {
+  // Remove the line of setInterval in cursor-view.js and apply this:
+  -webkit-animation: blinkCursor 800ms ease infinite alternate;
+}

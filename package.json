@@ -2,7 +2,7 @@
   "name": "high-street",
   "theme": "syntax",
   "version": "0.0.1",
-  "repository": "https://github.com/Chochstr/high-street-ui",
+  "repository": "https://github.com/Chochstr/high-street",
   "license": "MIT",
   "engines": {
     "atom": ">0.39.0"

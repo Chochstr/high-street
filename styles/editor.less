@@ -18,12 +18,51 @@
     background-color: @syntax-gutter-background-color;
     color: @syntax-gutter-text-color;
 
+    .drop-shadow {
+      -webkit-box-shadow: -2px 0 10px 2px #222;
+    }
+    
     .cursor-line {
       background-color: @syntax-gutter-background-color-selected;
+    }
+
+    .line-number {
+      padding-left: 10px;
+
+      .git-line-ignored {
+        border-color: @color-status-ignored;
+        opacity: 1;
+        padding-left: 8px;
+      }
+
+      .git-line-added {
+        border-color: @color-status-added;
+        opacity: 1;
+        padding-left: 8px;
+      }
+
+      .git-line-renamed {
+        border-color: @color-status-renamed;
+        opacity: 1;
+        padding-left: 8px;
+      }
+
+      .git-line-modified {
+        border-color: @color-status-modified;
+        opacity: 1;
+        padding-left: 8px;
+      }
+
+      .git-line-removed {
+        border-color: @color-status-removed;
+        opacity: 1;
+        padding-left: 8px;
+      }
     }
   }
 
   .line-number.cursor-line-no-selection {
+    color: yellow;
     background-color: @syntax-gutter-background-color-selected;
   }
 
